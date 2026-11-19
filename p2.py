@@ -27,5 +27,6 @@ orders = [
     {"order_id": "ORD12346", "store": "Mumbai", "customer_name": "Anita", "product": "Banana", "quantity": 2, "price": 1.5},
     {"order_id": "ORD12347", "store": "Delhi", "customer_name": "Ravi", "product": "Cherry", "quantity": 5, "price": 2.0}
 ]
-print(orders)
+print(orders[2])  # Access the third order in the list
+
 

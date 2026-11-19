@@ -30,8 +30,35 @@ order = {"order_id": "ORD12345", "store": "Pune", "customer_name": "Mukesh", "pr
 if order["quantity"] > 0:   
     print("Order is valid")
 
+orders = [
+    {"order_id": "ORD12345", "store": "Pune", "customer_name": "Mukesh", "product": "Apple", "quantity": 3, "price": 4},
+    {"order_id": "ORD12346", "store": "Mumbai", "customer_name": "Riya", "product": "Banana", "quantity": 0, "price": 2},
+]
+
 for order in orders:
     if order["quantity"] > 0:
         print(f"Order {order['order_id']} is valid")
     else:
         print(f"Order {order['order_id']} is invalid")
+
+a = 10
+b = 20
+c = 30
+if a > b and a > c:
+    print("a is the largest")
+elif b > c:
+    print("b is the largest")
+else:
+    print("c is the largest")
+
+if a > b or a > c:
+    print("a is greater than either b or c")
+else:
+    print("a is not greater than either b or c")
+
+for i in range(1, 11):
+    if i % 2 == 0:
+        print(f"{i} is even")
+    else:
+        print(f"{i} is odd")
+            
